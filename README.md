@@ -65,8 +65,8 @@ create table sales(
 <게시판 관리>
 1. 게시판 테이블
 create table notice(
-  noticeNo int primary key, auto_increament, --auto 번호
-  title varchar(50) not null, --제목
+  seq int primary key, auto_increament, --auto 번호
+  title varchar(30) not null, --제목
   content varchar(1000) not null, -내용
   author varchar(20) not null, --글쓴이
   regdate date default now(), --글 작성일
