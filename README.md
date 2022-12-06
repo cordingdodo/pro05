@@ -62,7 +62,7 @@ create table sales(
   parselCompany varchar(50) --배송 회사
   );
   ```
-
+```
 <게시판 관리>
 1. 게시판 테이블
 create table notice(
@@ -84,7 +84,8 @@ create table qna(
   qvisited int, --조회수
   qnum int not null --질문0 / 답변1
   qscreate int not null -- 공개0 / 비공개1
-
+  ```
+```
 <로그인 관리>
 1. 멤버 테이블
 create table member(
@@ -95,4 +96,5 @@ create table member(
   visited int,
   rank varchar(10)
   );
+  ```
   
