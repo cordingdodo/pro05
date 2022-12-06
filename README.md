@@ -1,9 +1,11 @@
 #project 05
 spring boot + gradle + java8 + mySql + bootstrap(Admin_LTE)
-
+```
 주제 : nike 홈페이지/쇼핑몰 구현
 주제 선정 이유 : 평소 좋아하던 브랜드 나이키로 쇼핑몰 구현을 해보았다
 개발 언어:spring boot + gradle + java8 + mySql + bootstrap(Admin_LTE)
+```
+
 
 구현 주제
 1. 상품 관리
@@ -14,6 +16,7 @@ spring boot + gradle + java8 + mySql + bootstrap(Admin_LTE)
 DB 설계
 mysql 사용자 : root | pw : a1234
 
+```
 <상품 관리>
 1. 상품 테이블
 create table product(
@@ -35,8 +38,7 @@ create table payment(
   cardNum varchar(50) not null, --결제 카드 번호
   payAmount int not null --총 결제 금액
   );
-  
-  
+
 3. 배송 테이블 
 create table parsel(
   parselNo int primary key auto_increament, --auto 번호
@@ -46,7 +48,6 @@ create table parsel(
   parselTel varchar(30), --배송기사 번호
   parselState int default 0 --배송 상태
   );
-  
 
 4. 판매 테이블
 create table sales(
@@ -60,7 +61,7 @@ create table sales(
   parseState int default 0, --배송 상태
   parselCompany varchar(50) --배송 회사
   );
-  
+  ```
 
 <게시판 관리>
 1. 게시판 테이블
