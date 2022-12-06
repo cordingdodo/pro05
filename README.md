@@ -93,8 +93,9 @@ create table member(
   pw varchar(30) not null,
   tel varchar(30) not null,
   addr varchar(100) not null,
-  visited int,
-  rank varchar(10)
-  );
+  regdate datetime default now(),
+  visited int,  
+  ranked varchar(10)
+);
   ```
   
