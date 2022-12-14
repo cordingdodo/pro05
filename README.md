@@ -90,7 +90,7 @@ create table qna(
 1. 멤버 테이블
 create table member(
   id varchar(30) primary key,
-  pw varchar(30) not null,
+  pw varchar(100) not null,
   tel varchar(30) not null,
   addr varchar(100) not null,
   regdate datetime default now(),
