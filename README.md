@@ -88,14 +88,14 @@ create table qna(
 ```
 <로그인 관리>
 1. 멤버 테이블
-create table member(
-  id varchar(30) primary key,
-  pw varchar(100) not null,
-  tel varchar(30) not null,
-  addr varchar(100) not null,
-  regdate datetime default now(),
-  visited int,  
-  ranked varchar(10)
-);
+  create table member (
+    id bigint not null auto_increment comment 'PK',
+    email varchar(50) not null comment '이메일',
+    password varchar(300) not null comment '비밀번호',
+    role enum('ROLE_MEMBER', 'ROLE_ADMIN') not null comment '등급',
+    created_date datetime default now() comment '가입일',
+    modified_date datetime default now() comment '수정일',
+    primary key (id)
+) comment '회원';
   ```
   
